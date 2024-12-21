@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+#sidebar ul li span.delete-btn {
+    position: absolute;
+    right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 10px;
+    color: #fff;
+    justify-content: space-around;
+}
+
+#toolbar button,
+#toolbar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+#toolbar input[type="color"] {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: none;
+    margin-right: 10px;
+}
+
+#canvasContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9e9e9;
+}
+
+canvas {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 添加画布按钮与其他按钮样式一致 */
+#addCanvas {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #007BFF; /* 蓝色背景 */
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+}
+
+#toolbar button:hover,
+#toolbar input:hover,
+#addCanvas:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}

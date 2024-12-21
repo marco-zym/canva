@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘图程序</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h2>画布列表</h2>
+        <ul id="canvasList"></ul>
+        <button id="addCanvas">添加画布</button>
+    </div>
+    <div id="main">
+        <div id="toolbar">
+            <button id="drawFree">自由绘制</button>
+            <button id="drawRect">画矩形</button>
+            <button id="drawCircle">画圆</button>
+            <button id="fillShape">填充形状</button>
+            <input type="color" id="colorPicker" title="选择颜色">
+            <input type="number" id="lineWidth" value="2" min="1" max="50" title="线条宽度">
+            <button id="clearCanvas">清除画布</button>
+            <button id="downloadCanvas">下载画布</button>
+        </div>
+        <div id="canvasContainer">
+            <canvas id="drawingCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
